@@ -11,6 +11,17 @@ int main() {
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
+    // ---------- BISPO ---------- 
+    // Movimento: 5 casas em diagonal superior direira
+    printf("Movimento do Bispo (5 casas diagonal: cima e direita):\n"); // Cima e deireita simula o movimento do bispo em diagonal.
+    int passosBispo = 5;
+    int contador = 1;
+    while (contador <= passosBispo) {
+        printf("Cima Direita\n"); 
+        contador++;
+    }
+    printf("\n");
+
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
