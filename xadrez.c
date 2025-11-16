@@ -13,20 +13,40 @@ int main() {
 
     // ---------- BISPO ---------- 
     // Movimento: 5 casas em diagonal superior direira
-    printf("Movimento do Bispo (5 casas diagonal: cima e direita):\n"); // Cima e deireita simula o movimento do bispo em diagonal.
-    int passosBispo = 5;
-    int contador = 1;
+    printf("Movimento do Bispo (5 casas diagonal: cima e direita):\n"); // Cima e direita simula o movimento do bispo em diagonal.
+    int passosBispo = 5; // Bispo deve dar 5 passos.
+    int contador = 1; 
     while (contador <= passosBispo) {
         printf("Cima Direita\n"); 
-        contador++;
+        contador++; // A cada loop do WHILE ele vai incrementar mais 1 passo e vai printar "Cima Direita", até o total de 5.
     }
     printf("\n");
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
+    // ---------- TORRE ----------
+    // Movimento: 5 casas para a direita
+    printf("Movimento da Torre (5 casas para a direita):\n"); 
+    for (int i = 1; i <= 5; i++) { // Torre deve movimentar 5 casas. Para cada movimento do loop FOR ele vai incrementar +1 até o total de 5.
+        printf("Direita\n");
+    }
+    printf("\n");
+
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+    // ---------- RAINHA ----------
+    // Movimento: 8 casas para a esquerda
+    printf("Movimento da Rainha (8 casas para a esquerda):\n"); 
+    int passosRainha = 8; // Passos total da rainha.
+    int j = 1;
+    do {
+        printf("Esquerda\n"); // Printa esquerda e acrescentar +1 passo.
+        j++;
+    } while (j <= passosRainha); // O WHILE vai "verificar" se os passos ainda são menores ou igual a 8 e continuar executando até o fim de 8x.
+
+    return 0;
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
