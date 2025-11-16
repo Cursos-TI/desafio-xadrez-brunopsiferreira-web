@@ -45,12 +45,26 @@ int main() {
         printf("Esquerda\n"); // Printa esquerda e acrescentar +1 passo.
         j++;
     } while (j <= passosRainha); // O WHILE vai "verificar" se os passos ainda são menores ou igual a 8 e continuar executando até o fim de 8x.
+    printf("\n");
 
-    return 0;
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    // ---------- CAVALO ----------
+    printf("Movimento do Cavalo (2 casas para baixo e 1 para esquerda):\n"); 
+    int passosCavalo = 1; // Cavalo começa com um movimento.
+
+    while (passosCavalo--) // O WHILE executa porque o valor inicial é "1" (TRUE) e depois diminui (--), tornando "0" (FALSE) para garantir somente uma execução.
+    {
+        for (int i = 0; i < 2; i++){
+            printf("Baixo\n"); // O loop vai acontecer enquanto "i" for menor que 2 e printar "Baixo" em cada execução, quando "i" atingir 2 ele vai parar.
+        }
+        printf("Esquerda\n"); // No final do loop interno FOR, ele vai printar "Esquerda" e finalizar o movimento de "L".
+    }
+
+
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
